@@ -1,0 +1,30 @@
+<form action="" (onsubmit)="registeration()">
+
+<h1>registeration</h1>
+
+
+<div>
+vehicle no:<input type="text" id="no" (input)="vehicleno=$event.target.value" 
+value="{{vehicleno}}">
+</div>
+slot no:<input type="text" id="sno" (input)="slotno=$event.target.value">
+
+<div>
+    entry time:<input type="text" id="eytime" (input)="entrytime=$event.target.value">
+</div>
+
+<div>
+    exit park:<input type="text" id="extime" (input)="exittime=$event.target.value">
+</div>
+
+<div>
+   hours to take park: <input type="text" id="hours" (input)="hourstopark=$event.target.value">
+</div>
+<div>
+    type of vehicle:<input type="text" id="typev" (input)="typeofvehicle=$event.target.value">
+    </div>
+    <div>
+        amount:<input type="text" id="amount" (input)="amount=$event.target.value">
+    </div>
+<input type="submit" value="submit">
+</form>
